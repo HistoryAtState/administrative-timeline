@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://expath.org/ns/pkg"
     name="http://history.state.gov/ns/data/administrative-timeline" abbrev="administrative-timeline"
-    version="0.1" spec="1.0">
+    version="0.2" spec="1.0">
     <title>Administrative Timeline of the Department of State (data)</title>
 </package>

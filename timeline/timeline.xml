@@ -30,7 +30,7 @@
                         <hi rend="italic">State Magazine</hi>. We invite questions and comments
                     about this resource at <ref target="mailto:history@state.gov"
                         >history@state.gov</ref>.</p>
-                <closer>Last updated, May 9, 2018.</closer>
+                <closer>Last updated, July 31, 2019.</closer>
             </div>
         </front>
         <body>
@@ -538,6 +538,12 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1854-01-01" notAfter="1854-12-31">1854</date>
+                    </head>
+                    <p>Establishment of a Statistical Office in the Department.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1855-03-01">March 1, 1855</date>
                     </head>
                     <p>An “act to remodel the Diplomatic and Consular Systems of the United States”
@@ -842,6 +848,20 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1872-01-01" notAfter="1872-12-31">1872</date>
+                    </head>
+                    <p>The Domestic Records Bureau was renamed the Territorial and Domestic Records
+                        Bureau.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1873-01-01" notAfter="1873-12-31">1873</date>
+                    </head>
+                    <p>The office of the Keeper of Rolls was established, with responsibility for
+                        the Department’s archives and for the promulgation of laws and treaties.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1873-02-22">February 22, 1873</date>
                     </head>
                     <p>A diplomatic and consular appropriations act (17 Stat. 471) authorized a rent
@@ -1118,10 +1138,8 @@
                     <head>
                         <date notBefore="1899-05-01" notAfter="1899-05-31">May 1899</date>
                     </head>
-                    <p>At the urging of Secretary of State <ref
-                            target="/departmenthistory/people/sherman-john">John Sherman</ref>, John
-                        H. Haswell, Chief of the Bureau of Indexes and Archives, devised the “Blue
-                        Code” to replace the Department’s “Red Code.”</p>
+                    <p>John H. Haswell, Chief of the Bureau of Indexes and Archives, devised the
+                        “Blue Code” to replace the Department’s “Red Code.”</p>
                 </div>
             </div>
             <div type="section" xml:id="chapter_1900-1909">
@@ -1358,6 +1376,15 @@
                 <head>1910–1919</head>
                 <div>
                     <head>
+                        <date notBefore="1910-01-01" notAfter="1910-12-31">1910</date>
+                    </head>
+                    <p>The Department of State introduced the “Green Code” for confidential
+                        messages. The earlier “Blue Code,” which had been compromised when copies
+                        were stolen from missions in St. Petersburg (1905) and Bucharest (1907),
+                        remained in use for unclassified messages.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1911-02-17">February 17, 1911</date>
                     </head>
                     <p>The Lowden Act (36 Stat. 917) authorized the Secretary of State to acquire
@@ -1379,6 +1406,13 @@
                     </head>
                     <p>Departmental Order 43 transferred the personnel and the duties of the Bureau
                         of Trade Relations to the Consular Bureau.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1914-01-01" notAfter="1914-12-31">1914</date>
+                    </head>
+                    <p>Establishment of a Welfare and Whereabouts Section in the Consular Bureau to
+                        assist American citizens who were stranded in war zones.</p>
                 </div>
                 <div>
                     <head>
@@ -1533,6 +1567,14 @@
                         officials at the point of departure. Each mission was asked to supply the
                         Department with blank or expired passports so that U.S. officials could
                         recognize foreign passports.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1916-01-01" notAfter="1916-12-31">1916</date>
+                    </head>
+                    <p>Designation of Charles Lee Cooke as Ceremonial Officer. He was the first
+                        State Department official to be concerned on a full-time basis with
+                        protocol. He was formally appointed to the position in 1919.</p>
                 </div>
                 <div>
                     <head>
@@ -4930,6 +4972,16 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1953-03-01" notAfter="1953-03-31">March 1953</date>
+                    </head>
+                    <p>The Department of State announced that budget constraints for Fiscal Year
+                        1953 would require a reduction in force of 300 to 350 Foreign Service
+                        Personnel by July 1. Notifications were issued on April 18, to be effective
+                        within 30 days. Regional Bureaus were to determine superfluous positions and
+                        to notify personnel offices.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1953-04-24">April 24, 1953</date>
                     </head>
                     <p>The Management Staff was abolished and its functions and personnel were
@@ -4991,6 +5043,13 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1953-08-01" notAfter="1953-08-31">August 1953</date>
+                    </head>
+                    <p>The Office of Protective Services became the Office of Special Consular
+                        Services.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1953-08-01">August 1, 1953</date>
                     </head>
                     <p>Reorganization Plan No. 7 (67 Stat. 641) abolished the Technical Cooperation
@@ -5018,6 +5077,15 @@
                             Dulles</ref> to make additional budget cuts in Fiscal Years 1954 and
                         1955, and to review operations for waste, inefficiency, duplication of
                         effort, and excessive costs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1953-09-01" notAfter="1953-09-30">September 1953</date>
+                    </head>
+                    <p>The Bureau of Near Eastern and South Asian Affairs reorganized its country
+                        desks, transferring responsibility for Iraq from the Lebanon-Syria Desk to
+                        the Arabian Peninsula Desk; names were changed accordingly. The
+                        Palestine-Israel-Jordan Desk became the Israel-Jordan Desk.</p>
                 </div>
                 <div>
                     <head>
@@ -5263,6 +5331,15 @@
                     <p>Secretary <ref target="/departmenthistory/people/dulles-john-foster"
                             >Dulles</ref> announced that the Wriston Commission would reconvene on
                         October 11 to assess progress toward strengthening the Foreign Service.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="1954-11-01">November 1, 1954</date>
+                    </head>
+                    <p>The Bureau of Far Eastern Affairs recieved a Deputy Assistant Secretary for
+                        Far Eastern Economic Affairs. <ref
+                            target="/departmenthistory/people/sebald-william-joseph">William
+                            Sebald</ref> was the first to hold the position</p>
                 </div>
                 <div>
                     <head>
@@ -5639,6 +5716,14 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1957-06-01" notAfter="1957-06-30">June 1957</date>
+                    </head>
+                    <p>In the Bureau of Economic Affairs, the Office of International Trade and
+                        Resources was divided into two Offices: International Trade and
+                        International Resources.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1957-07-06">July 6, 1957</date>
                     </head>
                     <p>State Annexes 5 and 7 were demolished to clear ground for the <ref
@@ -5689,6 +5774,13 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1958-01-01" notAfter="1958-01-31">January 1958</date>
+                    </head>
+                    <p>The Management Staff was established in the Office of the Assistant Secretary
+                        for Administration.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1958-01-01">January 1, 1958</date>
                     </head>
                     <p>To reduce the volume of telegraph messages, the Department authorized six
@@ -5711,6 +5803,13 @@
                     </head>
                     <p>The Department of State announced that, effective February 1, color
                         photographs would be accepted in U.S. passports.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1958-02-01" notAfter="1958-02-28">February 1958</date>
+                    </head>
+                    <p>A reorganization of the Personnel Operations Division in the Bureau of
+                        Administration changed the Medical Branch into the Medical Division.</p>
                 </div>
                 <div>
                     <head>
@@ -5752,6 +5851,15 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1958-06-01" notAfter="1958-06-30">June 1958</date>
+                    </head>
+                    <p>In the Bureau of Administration, the Division of Program Review in the Office
+                        of the Budget was abolished and replaced by the Division of Diplomatic and
+                        Consular Activities, the Division of Special International Activities, and a
+                        Reimbursement Staff.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1958-06-30">June 30, 1958</date>
                     </head>
                     <p>The Mutual Security Act of 1958 (72 Stat. 274) re-established the position of
@@ -5760,6 +5868,14 @@
                             target="/departmenthistory/people/dillon-clarence-douglas">C. Douglas
                             Dillon</ref>, formerly Deputy Under Secretary for Economic Affairs,
                         became Under Secretary for Economic Affairs on July 1.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1958-07-01" notAfter="1958-07-31">July 1958</date>
+                    </head>
+                    <p>In the Bureau of Economic Affairs, the Trade Agreements and Treaties Division
+                        was abolished and replaced by the Trade Agreements and Commercial Policy and
+                        Treaties Divisions.</p>
                 </div>
                 <div>
                     <head>
@@ -5882,6 +5998,14 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1959-07-01" notAfter="1959-07-31">July 1959</date>
+                    </head>
+                    <p>In the Office of Personnel, the Management Service Division was replaced by
+                        an Executive Staff consisting of the Executive Officer and the Budget and
+                        Fiscal, Operations, and Administrative Services Branches.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1959-07-02">July 2, 1959</date>
                     </head>
                     <p>Following the transfer of responsibility for cultural affairs to the new
@@ -5953,6 +6077,15 @@
                 <head>1960–1969</head>
                 <div>
                     <head>
+                        <date notBefore="1960-01-01" notAfter="1960-12-31">1960</date>
+                    </head>
+                    <p>Establishment of a Special Assistant for Politico-Military Affairs in the
+                        Office of the Deputy Under Secretary for Political Affairs. The Special
+                        Assistant became a Deputy Assistant Secretary under Foreign Affairs Manual
+                        Circular 2C of April 27, 1961.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1960-01-15">January 15, 1960</date>
                     </head>
                     <p>Responsibility for the Sudan was transferred from the Bureau of Near Eastern
@@ -5968,10 +6101,28 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1960-02-01" notAfter="1960-02-29">February 1960</date>
+                    </head>
+                    <p>TL: O-41 abolished the Control and Liaison Division of the Office of
+                        Munitions Control and transferred its duties to the Arms Traffic Division. A
+                        Military Information Control Staff was established to protect classified
+                        military information and to provide administrative support for the
+                        State-Defense Military Information Control Committee.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1960-02-04">February 4, 1960</date>
                     </head>
                     <p>Responsibility for Antarctic affairs was transferred from the Bureau of
                         European Affairs to the Bureau of International Organization Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1960-04-01" notAfter="1960-04-30">April 1960</date>
+                    </head>
+                    <p>In the Office of Personnel, four branches of the Classification and Wage
+                        Administration Division were combined into two: Departmental and Foreign
+                        Service Classification Wage Branches.</p>
                 </div>
                 <div>
                     <head>
@@ -6002,6 +6153,30 @@
                     </head>
                     <p>A Deputy Assistant Secretary for Mutual Security Information was established
                         in the Bureau of Public Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1960-06-01" notAfter="1960-06-30">June 1960</date>
+                    </head>
+                    <p>Foreign Service Circular 298 and Department Circular 362 established a
+                        personnel interchange program for secretaries, stenographers, and clerks in
+                        the Department and the Foreign Service. Foreign Service Staff personnel
+                        needed to be Class 11 or above with six consecutive years of service
+                        overseas. Civil Service personnel needed to be over 21, full-time employees
+                        with over two years’ service, GS-5 and above, available for world-wide
+                        service, and able to meet Foreign Service medical standards.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1960-07-01" notAfter="1960-07-31">July 1960</date>
+                    </head>
+                    <p>Plans were announced to replace the Department Organization Manual, the
+                        Regulations and Procedures Manual, and the Foreign Service Manual with a
+                        combined <hi rend="italic">Foreign Affairs Manual</hi>. The FAM would have
+                        11 volumes: Organization and Functions, General, Personnel, Budget and
+                        Fiscal, Communications and Records, General Services, General Consular
+                        Affairs, Citizenship and Passports, Visas, and classified volumes on
+                        economic and political affairs.</p>
                 </div>
                 <div>
                     <head>
@@ -6058,6 +6233,15 @@
                         Geographer was transferred to the Office of Functional and Biographic
                         Intelligence. Its other functions were transferred to the Office of the
                         Director of the Bureau of Intelligence and Research.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1960-12-01" notAfter="1960-12-31">December 1960</date>
+                    </head>
+                    <p>The position of Consular Chancellor was established to provide clerical help
+                        to smaller posts. Chancellors would be FSS-7 or -9, would hold the title of
+                        Vice Consul, and would handle consular, administrative, and clerical
+                        duties.</p>
                 </div>
                 <div>
                     <head>
@@ -6368,6 +6552,15 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1961-11-01" notAfter="1961-11-30">November 1961</date>
+                    </head>
+                    <p>A Senate subcommittee chaired by Senator Henry M. Jackson issued a report on
+                        Department administration. It recommended the appointment of Ambassadors at
+                        Large and special representatives to handle special problems so that the
+                        Secretary could concentrate on managing the Department.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1961-11-04">November 4, 1961</date>
                     </head>
                     <p>The Office of Inspector General of Foreign Assistance was established.
@@ -6441,6 +6634,16 @@
                     <p>Foreign Affairs Manual Circular 48 revised the administration of the Foreign
                         Service Staff Corps. Promotion ceilings for FSS personnel were removed, as
                         were restrictions on assignments of FSS personnel to FSO positions.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1962-03-01" notAfter="1962-03-31">March 1962</date>
+                    </head>
+                    <p>At the request of Under Secretary <ref
+                            target="/departmenthistory/people/ball-george-wildman">George W.
+                            Ball</ref>, the Bureau of the Budget made a survey of the economic
+                        function of the Department. It recommended that the Bureau of Economic
+                        Affairs be made an Office under a Deputy Under Secretary.</p>
                 </div>
                 <div>
                     <head>
@@ -6643,6 +6846,14 @@
                     <p>Foreign Affairs Manual Circular 80C renamed the Office of United Nations
                         Political, Security and Dependent Area Affairs the Office of United Nations
                         Political Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1962-09-01" notAfter="1962-09-30">September 1962</date>
+                    </head>
+                    <p>The Department of State introduced its first computer, an IBM 1401 known as
+                        “Maggie” for its four magnetic tape drives. It was replaced in November
+                        1965.</p>
                 </div>
                 <div>
                     <head>
@@ -7264,6 +7475,16 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1965-07-01" notAfter="1965-07-31">July 1965</date>
+                    </head>
+                    <p>The Office of Security was subdivided into two major components: Personnel
+                        Security (including the Divisions of Investigations, Evaluations, and
+                        Protective Security) and Domestic and Foreign Security (including the
+                        Divisions of Foreign Operations, Technical Services, and Domestic
+                        Operations).</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1965-07-01">July 1, 1965</date>
                     </head>
                     <p>The Bureau of Administration and its Assistant Secretary were eliminated and
@@ -7676,6 +7897,15 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1967-01-01" notAfter="1967-12-31">1967</date>
+                    </head>
+                    <p>An Office of Food Policy Programs was established in the Bureau of Economic
+                        Affairs, headed by a Deputy Assistant Secretary for International Resources
+                        and Food Policy. A new Food Policy Division replaced the Temperate Products
+                        Division. (TL: ORG-11).</p>
+                </div>
+                <div>
+                    <head>
                         <date notBefore="1967-01-01" notAfter="1967-01-31">January 1967</date>
                     </head>
                     <p>Professor Chris Argyris, a former member of the Hitch Committee, wrote a
@@ -7821,6 +8051,15 @@
                         Service, effective December 1. <ref
                             target="/departmenthistory/people/mace-howard-p">Howard P. Mace</ref>
                         was appointed as the first Deputy Assistant Secretary for Personnel.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1968-01-01" notAfter="1968-01-31">January 1968</date>
+                    </head>
+                    <p>A special task force was established in the Office of the Under Secretary to
+                        coordinate implementation of a January 18 Presidential directive to deal
+                        with the U.S. balance of payments problem by reducing the number of U.S.
+                        overseas personnel.</p>
                 </div>
                 <div>
                     <head>
@@ -8117,6 +8356,15 @@
                 <head>1970–1979</head>
                 <div>
                     <head>
+                        <date notBefore="1970-01-01" notAfter="1970-01-31">January 1970</date>
+                    </head>
+                    <p>A White House Memorandum from National Security Adviser <ref
+                            target="/departmenthistory/people/kissinger-henry-a">Henry A.
+                            Kissinger</ref> delegated authority over executive agencies
+                        participating in international conferences to the Secretary of State.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1970-01-09">January 9, 1970</date>
                     </head>
                     <p>Foreign Affairs Manual Circular 545 replaced the Office of Water for Peace
@@ -8222,6 +8470,15 @@
                         religion, sex, or national origin of the employee concerned.” A Department
                         Notice of December 2 said that there would be no exceptions for domestic
                         positions in the Department.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1970-12-01" notAfter="1970-12-31">December 1970</date>
+                    </head>
+                    <p>TL: ORG-44 established the position of Coordinator of Ocean Affairs in the
+                        office of the Under Secretary for Political Affairs. The Coordinator
+                        continued to serve as Special Assistant to the Secretary for Fisheries and
+                        Wildlife.</p>
                 </div>
                 <div>
                     <head>
@@ -8997,6 +9254,13 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1975-01-01" notAfter="1975-12-31">1975</date>
+                    </head>
+                    <p>Establishment of a Federal Women’s Program Office under the Deputy Under
+                        Secretary for Management.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1975-01-17">January 17, 1975</date>
                     </head>
                     <p>In the Bureau of Intelligence and Research, a Deputy Director for Research
@@ -9037,6 +9301,14 @@
                     <p>In response to growing Congressional interest in human rights issues in
                         foreign policy, the Department established the position of Coordinator for
                         Humanitarian Affairs in the Office of the Deputy Secretary.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1975-05-01" notAfter="1975-05-31">May 1975</date>
+                    </head>
+                    <p>The Department of State and AFSA reached an agreement to promote mid-level
+                        hiring of women and minorities. The Department expected to recruit up to 20
+                        qualified persons per year.</p>
                 </div>
                 <div>
                     <head>
@@ -9183,6 +9455,13 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1975-12-01" notAfter="1975-12-31">December 1975</date>
+                    </head>
+                    <p>An Office of Multilateral Affairs was established in the Bureau of
+                        International Organization Affairs.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1976-01-30">January 30, 1976</date>
                     </head>
                     <p>The position of Special Assistant and Consumer Affairs Coordinator was
@@ -9226,6 +9505,14 @@
                         “Transportation, Telecommunications, and Commercial Affairs.” The Office of
                         Commercial Affairs was transferred to Transportation, Telecommunications,
                         and Commercial Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1976-05-01" notAfter="1976-05-31">May 1976</date>
+                    </head>
+                    <p>The Office of Career Development and Assignments in the Bureau of Personnel
+                        was subdivided into the Offices of Foreign Service and Civil Service Career
+                        Development and Assignment.</p>
                 </div>
                 <div>
                     <head>
@@ -9305,6 +9592,15 @@
                         Regional Political Programs and Policy, Public and Congressional Affairs and
                         six regional offices: Andean, Bolivia/Chile, East Coast, Cuban, Central
                         American, and Mexican Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1976-10-01" notAfter="1976-10-31">October 1976</date>
+                    </head>
+                    <p>The Department of State and AFSA reached an agreement to establish a
+                        three-level system of promotion for the Foreign Service: a career candidate
+                        program for junior officers, a zone-merit promotion system for mid-level
+                        officers, and a senior threshold promotion process.</p>
                 </div>
                 <div>
                     <head>
@@ -9457,6 +9753,15 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1977-09-01" notAfter="1977-09-30">September 1977</date>
+                    </head>
+                    <p>President Carter abolished the Cabinet Committee to Combat Terrorism,
+                        replacing it with an Executive Committee on Terrorism, whose members were
+                        selected to the National Security Council. The Director of the Office for
+                        Combating Terrorism became chairman of the Executive Committee.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1977-10-11">October 11, 1977</date>
                     </head>
                     <p>President Carter sent a message to Congress announcing Reorganization Plan
@@ -9522,6 +9827,13 @@
                     </head>
                     <p>Foreign Affairs Manual Circular 737 gave the Director General of the Foreign
                         Service the additional title of Director of Personnel.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1978-01-01" notAfter="1978-12-31">1978</date>
+                    </head>
+                    <p>Establishment of an Office of Pacific Island Affairs in the Bureau of East
+                        Asian and Pacific Affairs.</p>
                 </div>
                 <div>
                     <head>
@@ -9849,6 +10161,18 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1980-03-01" notAfter="1980-03-31">March 1980</date>
+                    </head>
+                    <p>An Office of Opinion Analysis and Plans was established in the Bureau of
+                        Public Affairs, which collected the functions of the former Office of Policy
+                        and Plans, as well as relations with the Policy Planning Staff, the Bureau
+                        of Congressional Relations, the Department’s national Security Council
+                        Interdepartmental Groups, and the public affairs staffs in other Department
+                        bureaus. An Office of the Executive Director assumed the functions of the
+                        former Office of Plans and Management.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1980-03-17">March 17, 1980</date>
                     </head>
                     <p>The Refugee Act of 1980 (94 Stat. 109) made the Coordinator for Refugee
@@ -9925,6 +10249,16 @@
                     </head>
                     <p>The Director of the Office of Medical Services received rank equivalent to an
                         Assistant Secretary of State.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1980-10-01" notAfter="1980-10-31">October 1980</date>
+                    </head>
+                    <p>Assistant Secretary for Administration <ref
+                            target="/departmenthistory/people/tracy-thomas-m">Thomas A. Tracy</ref>
+                        established a Special Program and Liaison Staff to manage a Security
+                        Enhancement Program and to administer a supplemental appropriation for
+                        improving security at high-risk diplomatic posts.</p>
                 </div>
                 <div>
                     <head>
@@ -10352,6 +10686,17 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1986-01-01" notAfter="1986-12-31">1986</date>
+                    </head>
+                    <p>The Special Embassy Program was established to limit the growth of the
+                        smaller U.S. missions. SEP posts were defined as having 15 or fewer
+                        Department of State personnel and 30 or fewer U.S. officials from all
+                        agencies. There were 22 in the Bureau of African Affairs, 4 in Western
+                        Hemispheric Affairs, 10 in East Asian and Pacific Affairs, 19 in European
+                        Affairs, and 1 in Near Eastern Affairs.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1986-04-14">April 14, 1986</date>
                     </head>
                     <p>The Director of the Bureau of Politico-Military Affairs became an Assistant
@@ -10436,6 +10781,14 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1987-09-01" notAfter="1987-09-30">September 1987</date>
+                    </head>
+                    <p>The Office of Real Property Management was established in the Bureau of
+                        Administration to oversee leasing, design, construction, and equipment of
+                        Department facilities in the United States.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1987-09-18">September 18, 1987</date>
                     </head>
                     <p>Secretary of State <ref
@@ -10469,6 +10822,15 @@
                     </head>
                     <p>The Bureau of Inter-American Affairs instituted a new electronic mail system
                         known as the Foreign Affairs Information System.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1988-01-01" notAfter="1988-12-31">1988</date>
+                    </head>
+                    <p>The Office of East-West Trade in the Bureau of Economic and Business Affairs
+                        was divided into an Office of East-West Trade and Foreign Policy Controls
+                        and an Office of the Coordinating Committee on Export Controls Affairs. The
+                        latter dealt with export controls for national security purposes.</p>
                 </div>
                 <div>
                     <head>
@@ -10537,6 +10899,13 @@
                     </head>
                     <p>The Office of Management Operations was renamed the “Office of Management
                         Policy.”</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1989-01-01" notAfter="1989-12-31">1989</date>
+                    </head>
+                    <p>The Office of Information Management was transferred from the Bureau of
+                        Administration to the Bureau of Diplomatic Security.</p>
                 </div>
                 <div>
                     <head>
@@ -10642,6 +11011,13 @@
                 <head>1990–1999</head>
                 <div>
                     <head>
+                        <date notBefore="1990-01-01" notAfter="1990-12-31">1990</date>
+                    </head>
+                    <p>The Office of Munitions Controls in the Bureau of Political-Military Affairs
+                        was renamed the Office of Defense Trade Controls.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1990-01-10">January 10, 1990</date>
                     </head>
                     <p>A Department Notice announced that a study would be made of the Foreign
@@ -10729,6 +11105,13 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1991-05-01" notAfter="1991-05-31">May 1991</date>
+                    </head>
+                    <p>An Office of Information Systems Security was established in the Bureau of
+                        Diplomatic Security, to oversee computer and communications security.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1991-05-21">May 21, 1991</date>
                     </head>
                     <p>The Department of State opened a Career Development Resource Center for Civil
@@ -10753,6 +11136,31 @@
                         posts in the former Soviet Union (105 Stat. 655). It also called for the
                         establishment of a commission to report to Congress on the Department’s
                         personnel systems (105 Stat. 671).</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1991-12-01" notAfter="1991-12-31">December 1991</date>
+                    </head>
+                    <p>The Bureau of Personnel released a study, “Economic Personnel Needs to the
+                        Year 2000,” which called on the Department to emphasize promoting the
+                        economic and commercial skills of its personnel.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1991-12-01" notAfter="1991-12-31">December 1991</date>
+                    </head>
+                    <p>The U.S. Department of State, Report of the Director General's Commission on
+                        Civil Service Improvements, concluded that insufficient attention had been
+                        paid to career development, counseling, and training of Civil Service
+                        personnel.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1992-01-01" notAfter="1992-12-31">1992</date>
+                    </head>
+                    <p>The Department announced the formation of a Foreign Affairs Reserve Corps of
+                        retired Foreign Service and Civil Service personnel able to serve in
+                        domestic or overseas positions for up to four years.</p>
                 </div>
                 <div>
                     <head>
@@ -10789,6 +11197,20 @@
                     <p>The Bureau of South Asian Affairs was established, separating responsibility
                         for India, Pakistan, Bangladesh, Afghanistan, and Nepal from the Bureau of
                         Near Eastern Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1992-11-01" notAfter="1992-11-30">November 1992</date>
+                    </head>
+                    <p>A Commission chaired by former Assistant Secretary <ref
+                            target="/departmenthistory/people/veliotes-nicholas-alexander">Nicholas
+                            A. Veliotes</ref> issued its report on the Department’s personnel
+                        system. It endorsed separate Foreign and Civil Service systems, but added
+                        that “personnel policies and practices should emphasize flexible movement
+                        between the personnel systems rather than rigid boundary lines.” The
+                        Director General of the Foreign Service should receive new duties, while an
+                        Assistant Secretary for Human Resources would assume the functions that he
+                        held as Director of Personnel.</p>
                 </div>
                 <div>
                     <head>
@@ -10870,6 +11292,22 @@
                     <p>Dedication of the National Foreign Affairs Training Center in Arlington,
                         Virginia. Foreign Service Institute classes began moving there on October
                         25.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1994-01-01" notAfter="1994-12-31">1994</date>
+                    </head>
+                    <p>The Bureau of Consular Affairs established the Special Issuance Agency to
+                        issue diplomatic, official, and military dependent passports. It also
+                        obtained foreign visas for senior U.S. officials and Department
+                        personnel.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="1994-03-21">March 21, 1994</date>
+                    </head>
+                    <p>Civil Service employees voted to be represented by Local 1534 of the
+                        AFGE.</p>
                 </div>
                 <div>
                     <head>
@@ -10996,6 +11434,19 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1996-01-01" notAfter="1996-12-31">1996</date>
+                    </head>
+                    <p>The Bureau of Public Affairs established a Regional Media Outreach Unit.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1996-01-01" notAfter="1996-12-31">1996</date>
+                    </head>
+                    <p>Establishment of the National Passport Information Center in Dover, New
+                        Hampshire.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1996-02-10">February 10, 1996</date>
                     </head>
                     <p>The Information Technology Management Reform Act (110 Stat. 686) mandated the
@@ -11112,6 +11563,15 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1997-06-01" notAfter="1997-06-30">June 1997</date>
+                    </head>
+                    <p> The Bureau of Information Management was reorganized into seven offices: the
+                        Customer Center; Architecture, Planning and Program Review; Resources
+                        Management; Messaging Systems; Systems and Integration; Infrastructure; and
+                        Programs and Services.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1997-08-05">August 5, 1997</date>
                     </head>
                     <p>The position of Ambassador at Large for War Crimes Issues was established.
@@ -11146,11 +11606,45 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1997-11-01" notAfter="1997-11-30">November 1997</date>
+                    </head>
+                    <p>Secretary of State <ref
+                            target="/departmenthistory/people/albright-madeleine-korbel"
+                            >Albright</ref> approved a International Affairs Strategic Plan that
+                        announced seven primary goals: national security, economic prosperity,
+                        protection of Americans abroad, control of entry into the United States,
+                        cooperation with international law enforcement, promotion of democracy and
+                        human rights, humanitarian assistance in conflicts and natural disasters,
+                        and international environmental protection.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1998-01-01" notAfter="1998-12-31">1998</date>
+                    </head>
+                    <p>The Office for International Religious Freedom was established under a
+                        special representative to the Secretary. <ref
+                            target="/departmenthistory/people/seiple-robert-a">Robert A.
+                            Seiple</ref> received the rank of Ambassador at Large on March 25,
+                        1999.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1998-03-29">March 29, 1998</date>
                     </head>
                     <p>The Bureau of Information Resource Management was established. It
                         incorporated the Bureau of Information Management and the Office of the
                         Chief Information Officer. Fernando Burbano became its first Chief.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="1998-05-01" notAfter="1998-05-31">May 1998</date>
+                    </head>
+                    <p>The Department of State opened its first international videoconferencing
+                        center, in the Bureau of Oceans and International Environmental and
+                        Scientific Affairs. The first videoconference was between OES and the U.S.
+                        Mission to the United Nations as Acting Assistant Secretary Melinda Kimble
+                        and Ambassador <ref target="/departmenthistory/people/burleigh-albert-peter"
+                            >Peter Burleigh</ref> discussed potential uses.</p>
                 </div>
                 <div>
                     <head>
@@ -11376,6 +11870,16 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="1999-11-01" notAfter="1999-11-30">November 1999</date>
+                    </head>
+                    <p>The Overseas Presence Advisory Panel released its report. It recommended the
+                        formation of an interagency committee to determine the number of agency
+                        personnel needed at each post. Increased funding and an administrative
+                        reorganization would be needed to improve overseas facilities. Foreign
+                        Buildings Operations should be made a federally-chartered corporation.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="1999-11-29">November 29, 1999</date>
                     </head>
                     <p>The section of an omnibus spending bill dealing with arms control,
@@ -11538,8 +12042,8 @@
                         Secretary of State to establish an office to monitor and combat trafficking.
                         The Office to Monitor and Combat Trafficking in Persons was established in
                         October 2001, with <ref
-                            target="/departmenthistory/people/ely-raphel-nancy-halliday"
-                            >Nancy Halliday Ely-Raphel</ref> as its first Director.</p>
+                            target="/departmenthistory/people/ely-raphel-nancy-halliday">Nancy
+                            Halliday Ely-Raphel</ref> as its first Director.</p>
                 </div>
                 <div>
                     <head>
@@ -11548,6 +12052,14 @@
                     <p>The American Payroll Resolution Center was established in the Office of
                         Domestic Financial Services to provide a single office that was in charge of
                         salaries and leave accounts.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2000-11-01" notAfter="2000-11-30">November 2000</date>
+                    </head>
+                    <p>The Office of Export Control Cooperation and Sanctions was established in the
+                        Bureau of Nonproliferation with the mission of assisting other countries in
+                        regulating arms sales.</p>
                 </div>
                 <div>
                     <head>
@@ -11575,6 +12087,14 @@
                     </head>
                     <p>a Logistics Policy Branch was established in the Office of Logistics
                         Management.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2001-01-09">January 9, 2001</date>
+                    </head>
+                    <p>The Department of State dedicated the <ref
+                            target="/departmenthistory/people/rowan-carl-thomas">Carl T. Rowan</ref>
+                        Briefing Room.</p>
                 </div>
                 <div>
                     <head>
@@ -11750,6 +12270,16 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="2002-06-01" notAfter="2002-06-30">June 2002</date>
+                    </head>
+                    <p>The Bureau of Diplomatic Security began introducing a SmartCard access
+                        control system, initially in the <ref
+                            target="/departmenthistory/buildings/section28">Truman Building</ref>,
+                        and later in other Department annexes. Issuance was completed August 20,
+                        2007.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="2002-06-26">June 26, 2002</date>
                     </head>
                     <p>The Office of the Special Advisor for the New Independent States was
@@ -11803,6 +12333,21 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="2003-01-01" notAfter="2003-12-31">2003</date>
+                    </head>
+                    <p>The Bureau of Resource Management organized an Office of Strategic and
+                        Performance Planning to determine the most effective use of the Department’s
+                        resources.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2003-01-01" notAfter="2003-12-31">2003</date>
+                    </head>
+                    <p>The Office of Information Assurance was established to oversee information
+                        security programs.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="2003-01-02">January 2, 2003</date>
                     </head>
                     <p>The Office of Management Policy and Planning became the Office of Management
@@ -11815,6 +12360,13 @@
                     <p>In the Bureau of European and Eurasian Affairs, the Office of Policy and
                         Resource Planning and the position of Senior Advisor for Southeastern Europe
                         were eliminated.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2003-03-01" notAfter="2003-03-31">March 2003</date>
+                    </head>
+                    <p>The Office of Foreign Missions established a Regional Office in Miami,
+                        Florida.</p>
                 </div>
                 <div>
                     <head>
@@ -11852,6 +12404,14 @@
                     </head>
                     <p>The Border Biometrics Program administered by the Bureau of Consular Affairs
                         became the office of Border and International Programs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2003-10-01" notAfter="2003-10-31">October 2003</date>
+                    </head>
+                    <p>The Bureau of Political-Military Affairs established an Office of Weapons
+                        Removal and Abatement to assist in collecting surplus weapons at the end of
+                        conflicts.</p>
                 </div>
                 <div>
                     <head>
@@ -11950,6 +12510,21 @@
                     <p>A Special Adviser for Stabilization and Security Operations in Iraq and
                         Afghanistan was appointed. Retired General Claude Kicklighter reported to
                         the Deputy Secretary and the Under Secretary for Political Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2005-01-01" notAfter="2005-12-31">2005</date>
+                    </head>
+                    <p>The Bureau of South Asian Affairs assumed responsibility for the former
+                        Soviet Republics in Central Asia and became the Bureau of South and Central
+                        Asian Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2005-01-01" notAfter="2005-12-31">2005</date>
+                    </head>
+                    <p>The Bureau of Verification and Compliance was renamed “Verification,
+                        Compliance, and Implementation.”</p>
                 </div>
                 <div>
                     <head>
@@ -12106,6 +12681,20 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="2007-10-01" notAfter="2007-10-31">October 2007</date>
+                    </head>
+                    <p>The <ref target="/departmenthistory/people/marshall-george-catlett">George C.
+                            Marshall</ref> Wing of the <ref
+                            target="/departmenthistory/buildings/section29">Truman Building</ref>
+                        (which had been built for the War Department in 1941) completed its
+                        renovation. It then housed the Director of Foreign Assistance and the
+                        Bureaus of: Oceans and International Environmental and Scientific Affairs;
+                        Economic, Energy, and Business Affairs; Verification, Compliance and
+                        Implementation; International Security and Nonproliferation; and
+                        Intelligence and Research. It also included a conference center.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="2007-10-26">October 26, 2007</date>
                     </head>
                     <p>Secretary of State <ref target="/departmenthistory/people/rice-condoleezza"
@@ -12152,6 +12741,12 @@
                     <p>In the Bureau of European Affairs, the Offices of Austrian, German, and Swiss
                         Affairs and of North Central European Affairs were combined into an Office
                         of Central European Affairs.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2008-06-30">June 30, 2008</date>
+                    </head>
+                    <p>The Tucson Passport Center was opened in Tucson, Arizona.</p>
                 </div>
                 <div>
                     <head>
@@ -12517,6 +13112,14 @@
                 </div>
                 <div>
                     <head>
+                        <date notBefore="2011-02-01" notAfter="2011-02-28">February 2011</date>
+                    </head>
+                    <p>The Office of Coordinator for Cyber Issues was organized in the Office of the
+                        Secretary of State. Christopher Painter was the first to hold the
+                        position.</p>
+                </div>
+                <div>
+                    <head>
                         <date when="2011-06-21">June 21, 2011</date>
                     </head>
                     <p>An Office of the Comptroller was established in the Bureau of Consular
@@ -12628,6 +13231,14 @@
                         Environmental Policy became the Office of Environmental Quality and
                         Transboundary Issues. The Office of Ecology and Conservation became the
                         Office of Conservation and Water.</p>
+                </div>
+                <div>
+                    <head>
+                        <date notBefore="2012-12-01" notAfter="2012-12-31">December 2012</date>
+                    </head>
+                    <p>Establishment of the Office of Global Health Diplomacy. Ambassador <ref
+                            target="/departmenthistory/people/rowe-leslie-ventura">Leslie Rowe</ref>
+                        was its first chief.</p>
                 </div>
                 <div>
                     <head>
@@ -12874,12 +13485,92 @@
                     </head>
                     <p>At a town hall meeting of Department staff, Secretary <ref
                             target="/departmenthistory/people/tillerson-rex-wayne">Tillerson</ref>
-                        announced the immediate implementation of several Department redesign
-                        recommendations, including expanded employment opportunities for Eligible
-                        Family Members (EFMs) and an end to the hiring freeze for 2018 EFMs. (17
-                        State 126292) Tillerson also approved resumption of Civil Service lateral
-                        reassignments within the Department and resumption of internal Civil Service
-                        competitive promotions, both beginning January 7, 2018.</p>
+                        announced the implementation of several Department redesign recommendations,
+                        including expanded employment opportunities for Eligible Family Members
+                        (EFMs) and an end to the hiring freeze for EFMs in 2018. (17 State 126292)
+                        Tillerson also approved resumption of Civil Service lateral reassignments
+                        within the Department and resumption of internal Civil Service competitive
+                        promotions, both beginning January 7, 2018.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-02-13">February 13, 2018</date>
+                    </head>
+                    <p>Secretary <ref target="/departmenthistory/people/tillerson-rex-wayne"
+                            >Tillerson</ref> announced the transition of the ongoing Department
+                        redesign effort into the Impact Initiative. The Impact Initiative, he said,
+                        “is the implementation of plans generated during the 2017 Redesign to
+                        enhance our ability to carry out America’s foreign policy and strengthen our
+                        leadership training and development.” The Impact Initiative consisted of two
+                        broad components: The first, Modernization, consisted of 16 projects related
+                        to information technology and human resources, policy processes and the
+                        Department’s global resource footprint, and operational efficiencies. The
+                        second component, Leadership, consisted of a comprehensive review of
+                        policies designed to strengthen leadership development under the direction
+                        of <ref target="/departmenthistory/people/noyes-julieta-valls">Julieta Valls
+                            Noyes</ref>, Acting Deputy Director of the Foreign Service Institute.
+                        Ambassador <ref target="/departmenthistory/people/smith-daniel-bennett"
+                            >Daniel Smith</ref>, Assistant Secretary of the Bureau of Intelligence
+                        and Research, was named the overall leader of the Impact Initiative.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-03-13">March 13, 2018</date>
+                    </head>
+                    <p>The Department launched the Mercury Abatement Hub, an intranet website that
+                        provided curated resources and guidance for posts to use in engaging on
+                        mercury issues.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-05-01">May 1, 2018</date>
+                    </head>
+                    <p>Secretary of State <ref target="/departmenthistory/people/pompeo-michael-r"
+                            >Michael Pompeo</ref> reauthorized U.S. missions abroad to hire Eligible
+                        Family Members (EFMs) and other overseas employees, to be done within the
+                        constraints of funding resource levels as provided in the Department’s
+                        appropriations.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-05-07">May 7, 2018</date>
+                    </head>
+                    <p>IRM’s Email Division migrated Department email mailboxes from Exchange
+                        On-Premises to O365 Exchange Online, to provide more storage space at lower
+                        cost.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-05-15">May 15, 2018</date>
+                    </head>
+                    <p>Secretary <ref target="/departmenthistory/people/pompeo-michael-r"
+                            >Pompeo</ref> lifted the Department’s hiring freeze on Foreign Service
+                        and Civil Service personnel, authorizing hiring to currently funded
+                        levels.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-07-25">July 25, 2018</date>
+                    </head>
+                    <p>The Department of State's Cloud Strategy was approved. The strategy provided
+                        enterprise-level direction regarding cloud services, addressed the issue of
+                        bureau-focused cloud adoption, and drove the Department toward a shared
+                        services model to deliver cloud solutions more cost-effectively. The
+                        Department’s cloud strategy aligned with the President’s IT Modernization
+                        Plan, FY 2017 – 2019 Department of State IT Strategic Plan, and the Federal
+                        Information Technology Acquisition Reform Act (FITARA), while fulfilling
+                        various government-wide mandates.</p>
+                </div>
+                <div>
+                    <head>
+                        <date when="2018-10-25">October 25, 2018</date>
+                    </head>
+                    <p>The Bureau of Human Resources (HR) announced that Ambassador <ref
+                            target="/departmenthistory/people/yamate-robert-t">Robert T.
+                            Yamate</ref> had been appointed Senior Advisor and Care Coordinator for
+                        employees affected by the recent unexplained health incidents in Cuba and
+                        China. The creation of the Care Coordinator position implemented a
+                        recommendation from the Cuba Accountability Review Board report.</p>
                 </div>
             </div>
         </body>

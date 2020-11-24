@@ -1,3 +1,5 @@
 expath-pkg.xml
 repo.xml
 build/*
+.existdb.json
+.DS_Store

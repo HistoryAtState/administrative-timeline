@@ -8,7 +8,9 @@
     
     <target name="clean">
         <echo message="Deleting xar files..."/>
-        <delete dir="${build.dir}"/>
+        <delete dir="${build.dir}" failonerror="false"/>
+        <delete file="${basedir}/expath-pkg.xml" failonerror="false"/>
+        <delete file="${basedir}/repo.xml" failonerror="false"/>
     </target>
     
     

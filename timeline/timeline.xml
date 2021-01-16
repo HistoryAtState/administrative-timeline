@@ -13620,7 +13620,7 @@
                 </div>
                 <div>
                     <head>
-                        <date when="2019-06">June 2019</date>
+                        <date notBefore="2019-06-01" notAfter="2019-06-30">June 2019</date>
                     </head>
                     <p>The Director General of the Foreign Service, <ref
                             target="/departmenthistory/people/perez-carol-z">Carol Z. Perez</ref>,

@@ -18,16 +18,23 @@
                 @notBefore and @notAfter.</assert>
         </rule>
     </pattern>
+    <!-- in lieu of a proper ODD, ensure content can be transformed to & from Airtable flavored markdown... -->
+    <pattern id="airtable-flavored-markdown-checks">
+        <rule context="tei:div[not(@type)]//*">
+            <assert test="./name() = ('head', 'date', 'p', 'hi', 'ref')">This <value-of
+                    select="./name()"/> element is not allowed.</assert>
+        </rule>
+    </pattern>
     <pattern id="chronological-ordering-checks">
         <rule context="tei:div[tei:head/tei:date and preceding::tei:div/tei:head/tei:date]">
             <let name="current-entry-date"
                 value="tei:head/tei:date/(@when, @from, @notBefore)[1] cast as xs:date"/>
             <let name="previous-entry-date"
                 value="preceding::tei:div[1]/tei:head/tei:date/(@when, @from, @notBefore)[1] cast as xs:date"/>
-            <assert test="$current-entry-date ge $previous-entry-date">The date of this entry,
-                    <value-of select="format-date($current-entry-date, '[MNn] [D], [Y]')"/>, is
-                before the previous entry's date, <value-of
-                    select="format-date($previous-entry-date, '[MNn] [D], [Y]')"/>. Please place the
+            <assert test="$current-entry-date ge $previous-entry-date"><value-of
+                    select="format-date($current-entry-date, '[MNn] [D], [Y]')"/> predates the
+                previous entry, <value-of
+                    select="format-date($previous-entry-date, '[MNn] [D], [Y]')"/>. Please keep the
                 entries in chronological order.</assert>
         </rule>
     </pattern>
@@ -81,15 +88,13 @@
                         'day': day-from-date(.)
                     }"/>
             <let name="expected-regex" value="
-                (: Month1 Day1, Year1–Month2 Day2, Year2:)
+                    (: Month1 Day1, Year1–Month2 Day2, Year2:)
                     if ($from?year ne $to?year) then
                         format-date($from?date, '[MNn] [D], [Y]') || '–' || format-date($to?date, '[MNn] [D], [Y]')
-                    else
-                    (: Month1 Day1–Month2 Day2, Year:)
+                    else (: Month1 Day1–Month2 Day2, Year:)
                         if ($from?month ne $to?month) then
                             format-date($from?date, '[MNn] [D]') || '–' || format-date($to?date, '[MNn] [D], [Y]')
-                        else
-                            (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)
+                        else (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)
                             format-date($from?date, '[MNn] [D]') || '( and |–)' || format-date($to?date, '[D], [Y]')"/>
             <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected
                 from-to date to be formatted as <value-of select="$expected-regex"/>.</assert>

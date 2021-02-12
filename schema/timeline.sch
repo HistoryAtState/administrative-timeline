@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
-    xmlns:tei="http://www.tei-c.org/ns/1.0">
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
     <title>Administrative Timeline TEI encoding checks</title>
     <ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
     <ns uri="http://www.functx.com" prefix="functx"/>

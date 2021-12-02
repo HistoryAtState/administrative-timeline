@@ -96,7 +96,7 @@
                         else (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)
                             format-date($from?date, '[MNn] [D]') || '( and |–)' || format-date($to?date, '[D], [Y]')"/>
             <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected
-                from-to date to be formatted as <value-of select="$expected-regex"/>.</assert>
+                exact date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@notBefore and @notAfter]">
             <let name="notBefore" value="
@@ -134,8 +134,8 @@
                                     else
                                         'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
             <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')"
-                >Expected “<value-of select="."/>” to be formatted as “<value-of
-                    select="$expected-regex"/>”, according to uncertain date range rules.</assert>
+                >Expected uncertain date range @notBefore=<value-of select="@notBefore"/> @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of
+                    select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
         </rule>
     </pattern>
     <!-- http://www.xsltfunctions.com/xsl/functx_days-in-month.html -->

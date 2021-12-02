@@ -22,7 +22,7 @@
             </div>
         </front>
         <body>
-            <div type="section" id="chapter_1789-1899">
+            <div type="section" xml:id="chapter_1789-1899">
                 <head>1789-1899</head>
                 <div>
                     <head>
@@ -692,7 +692,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1900-1909">
+            <div type="section" xml:id="chapter_1900-1909">
                 <head>1900-1909</head>
                 <div>
                     <head>
@@ -830,7 +830,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1910-1919">
+            <div type="section" xml:id="chapter_1910-1919">
                 <head>1910-1919</head>
                 <div>
                     <head>
@@ -1099,7 +1099,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1920-1929">
+            <div type="section" xml:id="chapter_1920-1929">
                 <head>1920-1929</head>
                 <div>
                     <head>
@@ -1396,7 +1396,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1930-1939">
+            <div type="section" xml:id="chapter_1930-1939">
                 <head>1930-1939</head>
                 <div>
                     <head>
@@ -1664,7 +1664,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1940-1949">
+            <div type="section" xml:id="chapter_1940-1949">
                 <head>1940-1949</head>
                 <div>
                     <head>
@@ -2872,7 +2872,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1950-1959">
+            <div type="section" xml:id="chapter_1950-1959">
                 <head>1950-1959</head>
                 <div>
                     <head>
@@ -3797,7 +3797,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1960-1969">
+            <div type="section" xml:id="chapter_1960-1969">
                 <head>1960-1969</head>
                 <div>
                     <head>
@@ -5236,7 +5236,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1970-1979">
+            <div type="section" xml:id="chapter_1970-1979">
                 <head>1970-1979</head>
                 <div>
                     <head>
@@ -6353,7 +6353,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1980-1989">
+            <div type="section" xml:id="chapter_1980-1989">
                 <head>1980-1989</head>
                 <div>
                     <head>
@@ -6883,7 +6883,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_1990-1999">
+            <div type="section" xml:id="chapter_1990-1999">
                 <head>1990-1999</head>
                 <div>
                     <head>
@@ -7465,7 +7465,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_2000-2009">
+            <div type="section" xml:id="chapter_2000-2009">
                 <head>2000-2009</head>
                 <div>
                     <head>
@@ -8206,7 +8206,7 @@
                     </head>
                 </div>
             </div>
-            <div type="section" id="chapter_2010-2019">
+            <div type="section" xml:id="chapter_2010-2019">
                 <head>2010-present</head>
                 <div>
                     <head>

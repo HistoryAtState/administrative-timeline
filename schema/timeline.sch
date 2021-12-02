@@ -69,7 +69,7 @@
     <pattern id="date-alignment-checks">
         <rule context="tei:date[@when]">
             <assert test="normalize-space(.) = format-date(@when cast as xs:date, '[MNn] [D], [Y]')"
-            />
+                >Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value: “<value-of select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@from and @to]">
             <let name="from" value="

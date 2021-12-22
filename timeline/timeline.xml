@@ -3,34 +3,22 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>
-                    <p>Administrative Timeline of the Department of State</p>
-                </title>
+                <title>Administrative Timeline of the Department of State</title>
             </titleStmt>
             <publicationStmt>
-                <p>
-                    <p>Department of State, 2018</p>
-                </p>
+                <p>Department of State, 2018</p>
             </publicationStmt>
             <sourceDesc>
-                <p>
-                    <p>Compiled by Evan Duncan, 2006–17. Initial conversion from MS Word to TEI XML by Joseph Wicentowski, 2017. Edited and updated by Thomas Faith, 2017–present.</p>
-                </p>
+                <p>Compiled by Evan Duncan, 2006–17. Initial conversion from MS Word to TEI XML by Joseph Wicentowski, 2017. Edited and updated by Thomas Faith, 2017–present.</p>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <front>
             <div type="section">
-                <head>
-                    <p>Introduction</p>
-                </head>
-                <p>
-                    <p>This annotated timeline encompasses principal events concerning Department of State administration from 1789 through the most recent update noted below, focusing on the establishment of new offices and changes in organization. Research Historian Evan Duncan compiled this timeline beginning in 2006. Research Historian Thomas Faith edited the document for publication. The events and annotations are derived from a variety of public documents including the <hi rend="italic">Federal Register</hi>, <hi rend="italic">U.S. Statutes at Large</hi>, Executive Orders, Departmental Orders, and Department of State periodicals such as the <hi rend="italic">Department of State Bulletin</hi> and <hi rend="italic">State Magazine</hi>. We invite questions and comments about this resource at <ref target="mailto:history@state.gov">history@state.gov</ref>.</p>
-                </p>
-                <closer>
-                    <p>Last updated, February 18, 2020.</p>
-                </closer>
+                <head>Introduction</head>
+                <p>This annotated timeline encompasses principal events concerning Department of State administration from 1789 through the most recent update noted below, focusing on the establishment of new offices and changes in organization. Research Historian Evan Duncan compiled this timeline beginning in 2006. Research Historian Thomas Faith edited the document for publication. The events and annotations are derived from a variety of public documents including the <hi rend="italic">Federal Register</hi>, <hi rend="italic">U.S. Statutes at Large</hi>, Executive Orders, Departmental Orders, and Department of State periodicals such as the <hi rend="italic">Department of State Bulletin</hi> and <hi rend="italic">State Magazine</hi>. We invite questions and comments about this resource at <ref target="mailto:history@state.gov">history@state.gov</ref>.</p>
+                <closer>Last updated, February 18, 2020.</closer>
             </div>
         </front>
         <body>

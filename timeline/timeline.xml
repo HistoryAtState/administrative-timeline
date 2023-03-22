@@ -3,7 +3,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Administrative Timeline of the Department of State</title>
+                <title type="complete">Administrative Timeline of the Department of State</title>
+                <title type="short">Administrative Timeline</title>
             </titleStmt>
             <publicationStmt>
                 <p>Department of State, 2018</p>

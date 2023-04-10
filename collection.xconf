@@ -2,8 +2,21 @@
 <collection xmlns="http://exist-db.org/collection-config/1.0">
     <index xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <lucene>
-            <analyzer class="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
-            <text qname="tei:div"/>
+            <analyzer class="org.apache.lucene.analysis.standard.StandardAnalyzer">
+                <!-- Specify stop words - or remove them entirely -->
+                <param name="stopwords" type="org.apache.lucene.analysis.util.CharArraySet">
+                    <!--<value>the</value>-->
+                </param>
+            </analyzer>
+            <analyzer class="org.apache.lucene.analysis.core.KeywordAnalyzer" id="keyword"/>
+            <text qname="tei:div" index="no">
+                <!-- start required facets and fields -->
+                <facet dimension="hsg-category" expression="'department'"/>
+                <facet dimension="hsg-publication" expression="'timeline'"/>
+                <field name="hsg-fulltext" if="@type eq 'section'" store="no"/>
+                <field name="hsg-url" expression="'/departmenthistory/timeline' || (if (@xml:id) then '/' || substring-after(./@xml:id, 'chapter_') else ())"/>
+                <!-- end required facets and fields -->
+            </text>
         </lucene>
     </index>
 </collection>

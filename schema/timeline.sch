@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+<schema queryBinding="xslt3" xmlns="http://purl.oclc.org/dsdl/schematron"
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <title>Administrative Timeline TEI encoding checks</title>
-    <ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
-    <ns uri="http://www.functx.com" prefix="functx"/>
+    <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+    <ns prefix="functx" uri="http://www.functx.com"/>
     <pattern id="div-head-checks">
         <rule context="tei:div[@type = 'section']">
             <assert test="not(tei:head/tei:date)">Sections heads should not have date
@@ -69,7 +69,9 @@
     <pattern id="date-alignment-checks">
         <rule context="tei:date[@when]">
             <assert test="normalize-space(.) = format-date(@when cast as xs:date, '[MNn] [D], [Y]')"
-                >Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value: “<value-of select="."/>”.</assert>
+                >Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of
+                    select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value:
+                    “<value-of select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@from and @to]">
             <let name="from" value="
@@ -95,8 +97,10 @@
                             format-date($from?date, '[MNn] [D]') || '–' || format-date($to?date, '[MNn] [D], [Y]')
                         else (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)
                             format-date($from?date, '[MNn] [D]') || '( and |–)' || format-date($to?date, '[D], [Y]')"/>
-            <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected
-                exact date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
+            <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected exact
+                date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be
+                formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of
+                    select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@notBefore and @notAfter]">
             <let name="notBefore" value="
@@ -134,13 +138,14 @@
                                     else
                                         'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
             <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')"
-                >Expected uncertain date range @notBefore=<value-of select="@notBefore"/> @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of
+                >Expected uncertain date range @notBefore=<value-of select="@notBefore"/>
+                    @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of
                     select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
         </rule>
     </pattern>
     <!-- http://www.xsltfunctions.com/xsl/functx_days-in-month.html -->
-    <xsl:function name="functx:days-in-month" as="xs:integer?" xmlns:functx="http://www.functx.com">
-        <xsl:param name="date" as="xs:anyAtomicType?"/>
+    <xsl:function as="xs:integer?" name="functx:days-in-month" xmlns:functx="http://www.functx.com">
+        <xsl:param as="xs:anyAtomicType?" name="date"/>
         <xsl:sequence select="
                 if (month-from-date(xs:date($date)) = 2 and functx:is-leap-year($date)) then
                     29
@@ -148,8 +153,8 @@
                     (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[month-from-date(xs:date($date))]"
         />
     </xsl:function>
-    <xsl:function name="functx:is-leap-year" as="xs:boolean" xmlns:functx="http://www.functx.com">
-        <xsl:param name="date" as="xs:anyAtomicType?"/>
+    <xsl:function as="xs:boolean" name="functx:is-leap-year" xmlns:functx="http://www.functx.com">
+        <xsl:param as="xs:anyAtomicType?" name="date"/>
         <xsl:sequence select="
                 for $year in xs:integer(substring(string($date), 1, 4))
                 return

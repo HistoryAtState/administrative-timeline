@@ -3,3 +3,6 @@ repo.xml
 build/*
 .existdb.json
 .DS_Store
+.vscode/
+.idea/
+node_modules/

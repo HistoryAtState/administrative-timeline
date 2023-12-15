@@ -4,6 +4,7 @@
         <name>administrative-timeline</name>
         <url>http://history.state.gov/ns/data/administrative-timeline</url>
         <title>Administrative Timeline of the Department of State (data)</title>
-        <version>0.4</version>
+        <!-- VERSION SET AUTOMATICALLY DO NOT CHANGE -->
+        <!-- <version>0.4.0</version> -->
     </app>    
 </root>

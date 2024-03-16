@@ -126,9 +126,7 @@
                     else (: Month Year :) (: don't complain if the days don't exactly match the first and last day of the month :)
                         if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month (: and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month :)) then
                             format-date($notBefore?date, '[MNn] [Y]')
-                        else 
-                        (: Seasons: “The seasons are defined as spring (March, April, May), summer (June, July, August), autumn (September, October, November) and winter (December, January, February).” See https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/spring/when-does-spring-start. :)
-                        (: Winter :)
+                            else (: For seasons, use this definition: “Meteorological spring in the Northern Hemisphere includes March, April, and May; meteorological summer includes June, July, and August; meteorological fall includes September, October, and November; and meteorological winter includes December, January, and February.” See https://www.ncei.noaa.gov/news/meteorological-versus-astronomical-seasons :)
                             if ($notBefore?year + 1 eq $notAfter?year and $notBefore?month eq 12 and $notAfter?month eq 2 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
                                 'Winter ' || $notBefore?year
                             else (: Spring :)

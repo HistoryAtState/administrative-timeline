@@ -123,20 +123,34 @@
                     (: Year :)
                     if ($notBefore?year eq $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
                         format-date($notBefore?date, '[Y]')
-                    else (: Month Year :)
-                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                    else (: Month Year :) (: don't complain if the days don't exactly match the first and last day of the month :)
+                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month (: and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month :)) then
                             format-date($notBefore?date, '[MNn] [Y]')
-                        else (: Month1–Month2, Year :)
-                            if ($notBefore?year eq $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
-                                format-date($notBefore?date, '[MNn]') || '–' || format-date($notAfter?date, '[MNn], [Y]')
-                            else (: Year1–Year2 :)
-                                if ($notBefore?year ne $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
-                                    format-date($notBefore?date, '[Y]') || '–' || format-date($notAfter?date, '[Y]')
-                                else (: Month1 Year1–Month2 Year2 :)
-                                    if ($notBefore?year ne $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
-                                        format-date($notBefore?date, '[MNn] [Y]') || '–' || format-date($notAfter?date, '[MNn] [Y]')
-                                    else
-                                        'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
+                        else 
+                        (: Seasons: “The seasons are defined as spring (March, April, May), summer (June, July, August), autumn (September, October, November) and winter (December, January, February).” See https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/spring/when-does-spring-start. :)
+                        (: Winter :)
+                            if ($notBefore?year + 1 eq $notAfter?year and $notBefore?month eq 12 and $notAfter?month eq 2 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                'Winter ' || $notBefore?year
+                            else (: Spring :)
+                                if ($notBefore?year eq $notAfter?year and $notBefore?month eq 3 and $notAfter?month eq 5 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                    'Spring ' || $notBefore?year
+                                else (: Summer :)
+                                    if ($notBefore?year eq $notAfter?year and $notBefore?month eq 6 and $notAfter?month eq 8 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                        'Summer ' || $notBefore?year
+                                    else (: Autumn :)
+                                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq 9 and $notAfter?month eq 11 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                            'Autumn ' || $notBefore?year
+                                        else (: Month1–Month2, Year :)
+                                            if ($notBefore?year eq $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                                format-date($notBefore?date, '[MNn]') || '–' || format-date($notAfter?date, '[MNn], [Y]')
+                                            else (: Year1–Year2 :)
+                                                if ($notBefore?year ne $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
+                                                    format-date($notBefore?date, '[Y]') || '–' || format-date($notAfter?date, '[Y]')
+                                                else (: Month1 Year1–Month2 Year2 :)
+                                                    if ($notBefore?year ne $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                                        format-date($notBefore?date, '[MNn] [Y]') || '–' || format-date($notAfter?date, '[MNn] [Y]')
+                                                    else
+                                                        'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
             <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')"
                 >Expected uncertain date range @notBefore=<value-of select="@notBefore"/>
                     @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of

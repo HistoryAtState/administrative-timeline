@@ -14,9 +14,7 @@
                 <facet dimension="hsg-category" expression="'department'"/>
                 <facet dimension="hsg-publication" expression="'timeline'"/>
                 <field if="@type eq 'section'" name="hsg-fulltext" store="no"/>
-                <field
-                    expression="'/departmenthistory/timeline' || (if (@xml:id) then '/' || substring-after(./@xml:id, 'chapter_') else ())"
-                    name="hsg-url"/>
+                <field expression="'/departmenthistory/timeline' || (if (@xml:id) then '/' || substring-after(./@xml:id, 'chapter_') else ())" name="hsg-url"/>
                 <!-- end required facets and fields -->
             </text>
         </lucene>

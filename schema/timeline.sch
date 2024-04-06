@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt3"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:sqf="http://www.schematron-quickfix.com/validator/process">
+<schema queryBinding="xslt3" xmlns="http://purl.oclc.org/dsdl/schematron"
+    xmlns:sqf="http://www.schematron-quickfix.com/validator/process"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <title>Administrative Timeline TEI encoding checks</title>
-    <ns uri="http://www.tei-c.org/ns/1.0" prefix="tei"/>
-    <ns uri="http://www.functx.com" prefix="functx"/>
+    <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
+    <ns prefix="functx" uri="http://www.functx.com"/>
     <pattern id="div-head-checks">
         <rule context="tei:div[@type = 'section']">
             <assert test="not(tei:head/tei:date)">Sections heads should not have date
@@ -69,7 +69,9 @@
     <pattern id="date-alignment-checks">
         <rule context="tei:date[@when]">
             <assert test="normalize-space(.) = format-date(@when cast as xs:date, '[MNn] [D], [Y]')"
-                >Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value: “<value-of select="."/>”.</assert>
+                >Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of
+                    select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value:
+                    “<value-of select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@from and @to]">
             <let name="from" value="
@@ -95,8 +97,10 @@
                             format-date($from?date, '[MNn] [D]') || '–' || format-date($to?date, '[MNn] [D], [Y]')
                         else (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)
                             format-date($from?date, '[MNn] [D]') || '( and |–)' || format-date($to?date, '[D], [Y]')"/>
-            <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected
-                exact date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
+            <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected exact
+                date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be
+                formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of
+                    select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@notBefore and @notAfter]">
             <let name="notBefore" value="
@@ -119,28 +123,41 @@
                     (: Year :)
                     if ($notBefore?year eq $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
                         format-date($notBefore?date, '[Y]')
-                    else (: Month Year :)
-                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                    else (: Month Year :) (: don't complain if the days don't exactly match the first and last day of the month :)
+                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month (: and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month :)) then
                             format-date($notBefore?date, '[MNn] [Y]')
-                        else (: Month1–Month2, Year :)
-                            if ($notBefore?year eq $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
-                                format-date($notBefore?date, '[MNn]') || '–' || format-date($notAfter?date, '[MNn], [Y]')
-                            else (: Year1–Year2 :)
-                                if ($notBefore?year ne $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
-                                    format-date($notBefore?date, '[Y]') || '–' || format-date($notAfter?date, '[Y]')
-                                else (: Month1 Year1–Month2 Year2 :)
-                                    if ($notBefore?year ne $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
-                                        format-date($notBefore?date, '[MNn] [Y]') || '–' || format-date($notAfter?date, '[MNn] [Y]')
-                                    else
-                                        'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
+                            else (: For seasons, use this definition: “Meteorological spring in the Northern Hemisphere includes March, April, and May; meteorological summer includes June, July, and August; meteorological fall includes September, October, and November; and meteorological winter includes December, January, and February.” See https://www.ncei.noaa.gov/news/meteorological-versus-astronomical-seasons :)
+                            if ($notBefore?year + 1 eq $notAfter?year and $notBefore?month eq 12 and $notAfter?month eq 2 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                'Winter ' || $notBefore?year
+                            else (: Spring :)
+                                if ($notBefore?year eq $notAfter?year and $notBefore?month eq 3 and $notAfter?month eq 5 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                    'Spring ' || $notBefore?year
+                                else (: Summer :)
+                                    if ($notBefore?year eq $notAfter?year and $notBefore?month eq 6 and $notAfter?month eq 8 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                        'Summer ' || $notBefore?year
+                                    else (: Autumn :)
+                                        if ($notBefore?year eq $notAfter?year and $notBefore?month eq 9 and $notAfter?month eq 11 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                            'Autumn ' || $notBefore?year
+                                        else (: Month1–Month2, Year :)
+                                            if ($notBefore?year eq $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                                format-date($notBefore?date, '[MNn]') || '–' || format-date($notAfter?date, '[MNn], [Y]')
+                                            else (: Year1–Year2 :)
+                                                if ($notBefore?year ne $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then
+                                                    format-date($notBefore?date, '[Y]') || '–' || format-date($notAfter?date, '[Y]')
+                                                else (: Month1 Year1–Month2 Year2 :)
+                                                    if ($notBefore?year ne $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then
+                                                        format-date($notBefore?date, '[MNn] [Y]') || '–' || format-date($notAfter?date, '[MNn] [Y]')
+                                                    else
+                                                        'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
             <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')"
-                >Expected uncertain date range @notBefore=<value-of select="@notBefore"/> @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of
+                >Expected uncertain date range @notBefore=<value-of select="@notBefore"/>
+                    @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of
                     select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
         </rule>
     </pattern>
     <!-- http://www.xsltfunctions.com/xsl/functx_days-in-month.html -->
-    <xsl:function name="functx:days-in-month" as="xs:integer?" xmlns:functx="http://www.functx.com">
-        <xsl:param name="date" as="xs:anyAtomicType?"/>
+    <xsl:function as="xs:integer?" name="functx:days-in-month" xmlns:functx="http://www.functx.com">
+        <xsl:param as="xs:anyAtomicType?" name="date"/>
         <xsl:sequence select="
                 if (month-from-date(xs:date($date)) = 2 and functx:is-leap-year($date)) then
                     29
@@ -148,8 +165,8 @@
                     (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)[month-from-date(xs:date($date))]"
         />
     </xsl:function>
-    <xsl:function name="functx:is-leap-year" as="xs:boolean" xmlns:functx="http://www.functx.com">
-        <xsl:param name="date" as="xs:anyAtomicType?"/>
+    <xsl:function as="xs:boolean" name="functx:is-leap-year" xmlns:functx="http://www.functx.com">
+        <xsl:param as="xs:anyAtomicType?" name="date"/>
         <xsl:sequence select="
                 for $year in xs:integer(substring(string($date), 1, 4))
                 return

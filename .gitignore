@@ -4,4 +4,3 @@ build/*
 .vscode/
 .idea/
 node_modules/
-expath-pkg.xml

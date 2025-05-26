@@ -16,7 +16,7 @@
     <!-- in lieu of a proper ODD, ensure content can be transformed to & from Airtable flavored markdown... -->
     <pattern id="airtable-flavored-markdown-checks">
         <rule context="tei:div[not(@type)]//*">
-            <assert test="./name() = ('head', 'date', 'p', 'hi', 'ref')">This <value-of select="./name()"/> element is not allowed.</assert>
+            <assert test="./name() = ('head', 'date', 'p', 'hi', 'ref')">This <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="./name()"/> element is not allowed.</assert>
         </rule>
     </pattern>
     <pattern id="chronological-ordering-checks">
@@ -24,57 +24,57 @@
             <let name="current-entry-date" value="tei:head/tei:date/(@when, @from, @notBefore)[1] cast as xs:date"/>
             <let name="previous-entry-date" value="preceding::tei:div[1]/tei:head/tei:date/(@when, @from, @notBefore)[1] cast as xs:date"/>
             <assert test="$current-entry-date ge $previous-entry-date">
-                <value-of select="format-date($current-entry-date, '[MNn] [D], [Y]')"/> predates the
-                previous entry, <value-of select="format-date($previous-entry-date, '[MNn] [D], [Y]')"/>. Please keep the
+                <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="format-date($current-entry-date, '[MNn] [D], [Y]')"/> predates the
+                previous entry, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="format-date($previous-entry-date, '[MNn] [D], [Y]')"/>. Please keep the
                 entries in chronological order.</assert>
         </rule>
     </pattern>
     <pattern id="date-attribute-validity-checks">
         <rule context="@when">
-            <assert test=". castable as xs:date">This @when attribute, <value-of select="."/>, must
+            <assert test=". castable as xs:date">This @when attribute, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>, must
                 be a complete date, YYYY-MM-DD. Alternatively, consider a @from-@to for a certain
                 date range, or @notBefore-@notAfter for an uncertain date range.</assert>
         </rule>
         <rule context="@from">
-            <assert test=". castable as xs:date">This @from attribute, <value-of select="."/>, must
+            <assert test=". castable as xs:date">This @from attribute, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>, must
                 be a complete date, YYYY-MM-DD. Alternatively, consider @notBefore-@notAfter for an
                 uncertain date range.</assert>
         </rule>
         <rule context="@to">
-            <assert test=". castable as xs:date and . gt ../@from">This @to attribute, <value-of select="."/>, must be a complete date, YYYY-MM-DD and fall chronologically after
-                its corresponding @from, <value-of select="../@from"/>. Alternatively, consider
+            <assert test=". castable as xs:date and . gt ../@from">This @to attribute, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>, must be a complete date, YYYY-MM-DD and fall chronologically after
+                its corresponding @from, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="../@from"/>. Alternatively, consider
                 @notBefore-@notAfter for an uncertain date range.</assert>
         </rule>
         <rule context="@notBefore">
-            <assert test=". castable as xs:date">This @notBefore attribute, <value-of select="."/>,
+            <assert test=". castable as xs:date">This @notBefore attribute, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>,
                 must be a complete date, YYYY-MM-DD. Alternatively, consider @from-@to for an
                 certain date range.</assert>
         </rule>
         <rule context="@notAfter">
             <assert test=". castable as xs:date and . gt ../@notBefore">This @notAfter attribute,
-                    <value-of select="."/>, must be a complete date, YYYY-MM-DD and fall
-                chronologically after its corresponding @notBefore, <value-of select="../@notBefore"/>. Alternatively, consider @from-@to for an certain date range.</assert>
+                    <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>, must be a complete date, YYYY-MM-DD and fall
+                chronologically after its corresponding @notBefore, <sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="../@notBefore"/>. Alternatively, consider @from-@to for an certain date range.</assert>
         </rule>
     </pattern>
     <pattern id="date-alignment-checks">
         <rule context="tei:date[@when]">
-            <assert test="normalize-space(.) = format-date(@when cast as xs:date, '[MNn] [D], [Y]')">Expected exact date @when=<value-of select="@when"/> to be formatted as “<value-of select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value:
-                    “<value-of select="."/>”.</assert>
+            <assert test="normalize-space(.) = format-date(@when cast as xs:date, '[MNn] [D], [Y]')">Expected exact date @when=<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="@when"/> to be formatted as “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="format-date(@when cast as xs:date, '[MNn] [D], [Y]')"/>”. Actual value:
+                    “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@from and @to]">
             <let name="from" value="                     (@from cast as xs:date) ! map {                         'date': .,                         'year': year-from-date(.),                         'month': month-from-date(.),                         'day': day-from-date(.)                     }"/>
             <let name="to" value="                     (@to cast as xs:date) ! map {                         'date': .,                         'year': year-from-date(.),                         'month': month-from-date(.),                         'day': day-from-date(.)                     }"/>
             <let name="expected-regex" value="                     (: Month1 Day1, Year1–Month2 Day2, Year2:)                     if ($from?year ne $to?year) then                         format-date($from?date, '[MNn] [D], [Y]') || '–' || format-date($to?date, '[MNn] [D], [Y]')                     else (: Month1 Day1–Month2 Day2, Year:)                         if ($from?month ne $to?month) then                             format-date($from?date, '[MNn] [D]') || '–' || format-date($to?date, '[MNn] [D], [Y]')                         else (: Month1 Day1(‘–’ or ‘ and ’)Day2, Year :)                             format-date($from?date, '[MNn] [D]') || '( and |–)' || format-date($to?date, '[D], [Y]')"/>
             <assert test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected exact
-                date range @from=<value-of select="@from"/> @to=<value-of select="@to"/> to be
-                formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
+                date range @from=<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="@from"/> @to=<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="@to"/> to be
+                formatted as “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="$expected-regex"/>”. Actual value: “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>”.</assert>
         </rule>
         <rule context="tei:date[@notBefore and @notAfter]">
             <let name="notBefore" value="                     (@notBefore cast as xs:date) ! map {                         'date': .,                         'year': year-from-date(.),                         'month': month-from-date(.),                         'day': day-from-date(.),                         'days-in-month': functx:days-in-month(.)                     }"/>
             <let name="notAfter" value="                     (@notAfter cast as xs:date) ! map {                         'date': .,                         'year': year-from-date(.),                         'month': month-from-date(.),                         'day': day-from-date(.),                         'days-in-month': functx:days-in-month(.)                     }"/>
             <let name="expected-regex" value="                     (: Year :)                     if ($notBefore?year eq $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then                         format-date($notBefore?date, '[Y]')                     else (: Month Year :) (: don't complain if the days don't exactly match the first and last day of the month :)                         if ($notBefore?year eq $notAfter?year and $notBefore?month eq $notAfter?month (: and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month :)) then                             format-date($notBefore?date, '[MNn] [Y]')                             else (: For seasons, use this definition: “Meteorological spring in the Northern Hemisphere includes March, April, and May; meteorological summer includes June, July, and August; meteorological fall includes September, October, and November; and meteorological winter includes December, January, and February.” See https://www.ncei.noaa.gov/news/meteorological-versus-astronomical-seasons :)                             if ($notBefore?year + 1 eq $notAfter?year and $notBefore?month eq 12 and $notAfter?month eq 2 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                 'Winter ' || $notBefore?year                             else (: Spring :)                                 if ($notBefore?year eq $notAfter?year and $notBefore?month eq 3 and $notAfter?month eq 5 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                     'Spring ' || $notBefore?year                                 else (: Summer :)                                     if ($notBefore?year eq $notAfter?year and $notBefore?month eq 6 and $notAfter?month eq 8 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                         'Summer ' || $notBefore?year                                     else (: Autumn :)                                         if ($notBefore?year eq $notAfter?year and $notBefore?month eq 9 and $notAfter?month eq 11 and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                             'Autumn ' || $notBefore?year                                         else (: Month1–Month2, Year :)                                             if ($notBefore?year eq $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                                 format-date($notBefore?date, '[MNn]') || '–' || format-date($notAfter?date, '[MNn], [Y]')                                             else (: Year1–Year2 :)                                                 if ($notBefore?year ne $notAfter?year and $notBefore?month eq 1 and $notAfter?month eq 12 and $notBefore?day eq 1 and $notAfter?day eq 31) then                                                     format-date($notBefore?date, '[Y]') || '–' || format-date($notAfter?date, '[Y]')                                                 else (: Month1 Year1–Month2 Year2 :)                                                     if ($notBefore?year ne $notAfter?year and $notBefore?month ne $notAfter?month and $notBefore?day eq 1 and $notAfter?day eq $notAfter?days-in-month) then                                                         format-date($notBefore?date, '[MNn] [Y]') || '–' || format-date($notAfter?date, '[MNn] [Y]')                                                     else                                                         'Sorry! Unrecognized uncertain date range pattern. Let Joe know!'"/>
-            <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected uncertain date range @notBefore=<value-of select="@notBefore"/>
-                    @notAfter=<value-of select="@notAfter"/> to be formatted as “<value-of select="$expected-regex"/>”. Actual value: “<value-of select="."/>”.</assert>
+            <assert role="warning" test="matches(normalize-space(.), '^' || $expected-regex || '$')">Expected uncertain date range @notBefore=<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="@notBefore"/>
+                    @notAfter=<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="@notAfter"/> to be formatted as “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="$expected-regex"/>”. Actual value: “<sch:value-of xmlns:sch="http://purl.oclc.org/dsdl/schematron" select="."/>”.</assert>
         </rule>
     </pattern>
     <!-- http://www.xsltfunctions.com/xsl/functx_days-in-month.html -->

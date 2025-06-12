@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="xar" name="other-publications" basedir=".">
+<project default="xar" name="administrative-timeline" basedir=".">
     <xmlproperty file="build.properties.xml" semanticAttributes="true" keepRoot="false" />
     <property name="build.dir" value="build" />
     <property name="git.repo.path" value="${basedir}/.git" />
